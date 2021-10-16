@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Creating a virtual machine"
 VBoxManage createvm --name ubuntu --ostype "Ubuntu-64" --register --basefolder ".\Krithik"
 
 VBoxManage modifyvm ubuntu --ioapic on --vram 128 --memory 1536 --nic1 nat --cpus 2
